@@ -8,20 +8,21 @@ Quantum computing takes advantage of two quantum phenomena that we don't observe
 
 Preformance:
 Measuring the preformance of a quantum computer, is dependent on multiple aspects:
-1. Number of qubits in the system: 
-2. Quantum volume, a new measuring-concept recently introduced by IBM that takes into consideration the number of qubits along with their noise level to come.
+1. Number of qubits in the system.
+2. Quantum volume, a new measuring-concept recently introduced by IBM that takes into consideration the number of qubits along with the number of gates and measurement errors, device cross talk, as well as device connectivity and circuit compiler efficiency.
+[article](https://newsroom.ibm.com/2019-03-04-IBM-Achieves-Highest-Quantum-Volume-to-Date-Establishes-Roadmap-for-Reaching-Quantum-Advantage)
 
 
 # Learning materials:
 
-## To learn the CS and Math side of quantum computing:
+To learn the CS and Math side of quantum computing:
 [Hour and half video](https://www.youtube.com/watch?v=F_Riqjdh2oM), requires some basic background of linear algebra. 
 
-## To learn the programming side of quantum computing:
+To learn the programming side of quantum computing:
 [Playlist of 9 vides, about 15 minutes each](https://www.youtube.com/playlist?list=PLOFEBzvs-Vvp2xg9-POLJhQwtVktlYGbY). Using Qiskit, a python library, doesn't require understanding of quantum mechanics.
 
-# Qubits:
-[Phosphours atom](https://www.youtube.com/watch?v=zNzzGgr2mhk)
+## Qubits:
+Several quantum particules can be used as a qubit, including [the outer electron of a phosphours atom](https://www.youtube.com/watch?v=zNzzGgr2mhk), or by leveraging the polarization property of a photon.
 
 
 ## Quantum gates:
