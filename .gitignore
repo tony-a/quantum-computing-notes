@@ -108,3 +108,6 @@ venv.bak/
 cheat_sheet/*.log
 cheat_sheet/*.aux
 cheat_sheet/*.synctex.gz
+
+udemy_course/.ipynb_checkpoints
+
