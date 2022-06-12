@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+.DS_Store
+.idea/
+
+cheat_sheet/*.log
+cheat_sheet/*.aux
+cheat_sheet/*.synctex.gz
