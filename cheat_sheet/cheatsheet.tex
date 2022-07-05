@@ -1,18 +1,21 @@
 \documentclass{article}
 \usepackage{harpoon}  % used for vector arrow notation
+\usepackage{multicol}
 
-% \usepackage{titling}             % Uncomment both to   
-% \setlength{\droptitle}{-2cm}     % change title position 
-\title{\vspace{-4cm}            % Another way to do
+
+\title{\vspace{-4cm}
 Quantum Computing Cheat Sheet
-\vspace{-1cm}}
+}
+
+\author{ \vspace{-2cm}
+Tony Askar
+}
 
 \date{} % Removes the default date from the title
 
 \begin{document}
-
 \maketitle
-\hrule 
+\hrule
 \vspace{5pt}
 
 \textbf{bra-ket notation:} Quantum states are represented by column vectors, called kets
@@ -86,6 +89,23 @@ $\langle{\phi} | {\psi}\rangle = \left(
 \hrule 
 \vspace{5pt}
 
+\textbf{Global phase factor:}
+A complex number z can be written as $z = re^{i\theta} $ in the case where $ r= 1$ and $\theta$ is a real number, then z is known as a phase factor and it can be simply ignored, as in it will not affect the state.
+
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+
+\textbf{Euler's formula:}
+\begin{center}
+$ e^{i\theta} = \cos(\theta) + i\sin(\theta) $
+\end{center}
+
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+
+
 \textbf{Quantum gates \& Matrices:}
 
 \begin{itemize}
@@ -140,53 +160,39 @@ $
 	\item \textbf{Trace of a matrix} is the sum of all diagonal elements.
 \end{itemize}
 
-\hrule 
-\vspace{5pt}
-
 \newpage
 
-\textbf{Global phase factor:}
-A complex number z can be written as $z = re^{i\theta} $ in the case where $ r= 1$ and $\theta$ is a real number, then z is known as a phase factor and it can be simply ignored, as in it will not affect the state.
+\textbf{Common gates:}
 
-\vspace{5pt}
-\hrule 
-\vspace{5pt}
-
-\textbf{Euler's formula:} 
-\begin{center}
-$ e^{i\theta} = \cos(\theta) + i\sin(\theta) $
-\end{center}
-
-\vspace{5pt}
-\hrule 
-\vspace{5pt}
-
-\textbf{Density Matrix:} A general way of expressing a quantum state.
-When state vectors and wavefunctions can only describe pure states, a density matrix can describe mixed states as well. 
-
-A density matrix is defined as:
-
-\begin{center}
-$ \displaystyle \rho = \sum_{j} P_{j}  |{\psi}_{j} \rangle \langle{\psi}_{j} | $
-\end{center}
-where $P_{j}$ is the probability of obtaining the state $|\psi_{j} \rangle$. \\
-
-Every density matrix can also be written as a linear combination of Pauli gates, as follows:
-
-\begin{center}
-$\rho = \frac{1}{2} I + c_{1} X + c_{2}Y + c_{3}Z$ \\ 
-\end{center}
-
-where
+Identity and Hadamard gates:
 \begin{center}
 $
   I =
   \left[ {\begin{array}{cc}
     1 & 0 \\
     0 & 1 \\
-  \end{array} } \right] 
+  \end{array} } \right]
 $
 \quad
+$
+  H = \frac{1}{\sqrt{2}} \left[ {\begin{array}{cc}
+    1 & 1 \\
+    1 & -1 \\
+  \end{array} } \right]
+$
+\end{center}
+
+\begin{center}
+
+$H|0\rangle = |+ \rangle =  \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}}|1\rangle$
+
+$H|1\rangle = |- \rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{1}{\sqrt{2}}|1\rangle$
+\end{center}
+
+
+
+Pauli gates:
+\begin{center}
 $
   X = \left[ {\begin{array}{cc}
     0 & 1 \\
@@ -210,7 +216,97 @@ $
 
 \end{center}
 
-and  $c_{1}, c_{2}, c_{3}$ give us the bloch vector in cartisian coordinates:
+
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+
+\textbf{Gate identities:} \\
+
+
+Pauli identities:
+\begin{multicols}{2}
+	\begin{enumerate}
+		\item $ XY = iZ $
+		\item $ YZ = iX $
+		\item $ ZX = iY $
+	\columnbreak
+		\item $ XZ = -iY $
+		\item $ ZY = -iZ $
+		\item $ YX = -iZ $
+	\end{enumerate}
+\end{multicols}
+
+\begin{multicols}{2}
+Hadamard identities:
+	\begin{enumerate}
+		\item $ HZH = X $
+		\item $ HYN = -Y $
+		\item $ HXN = Z $
+	\end{enumerate}
+\columnbreak
+
+S identities:
+	\begin{enumerate}
+		\item $ SXS^\dagger = Y $
+		\item $ SYS^\dagger  = -X $
+		\item $ SZS^\dagger  = Z $
+	\end{enumerate}
+\end{multicols}
+
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+\textbf{Qubit basis states:}
+
+\begin{center}
+$ |0\rangle =  \left(
+				\begin{array}{c}
+					 1 \\
+					 0
+				\end{array}
+			\right)
+$
+\quad
+$ |1\rangle =  \left(
+				\begin{array}{c}
+					 0 \\
+					 1
+				\end{array}
+			\right)
+$
+\end{center}
+
+\begin{center}
+$H|0\rangle = |+ \rangle =  \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}}|1\rangle$
+
+$H|1\rangle = |- \rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{1}{\sqrt{2}}|1\rangle$
+\end{center}
+
+\vspace{5pt}
+\hrule
+\vspace{5pt}
+
+\newpage
+
+
+\textbf{Density Matrix:} A general way of expressing a quantum state.
+When state vectors and wave functions can only describe pure states, a density matrix can describe mixed states as well.
+
+A density matrix is defined as:
+
+\begin{center}
+$ \displaystyle \rho = \sum_{j} P_{j}  |{\psi}_{j} \rangle \langle{\psi}_{j} | $
+\end{center}
+where $P_{j}$ is the probability of obtaining the state $|\psi_{j} \rangle$. \\
+
+Every density matrix can also be written as a linear combination of Pauli gates, as follows:
+
+\begin{center}
+$\rho = \frac{1}{2} I + c_{1} X + c_{2}Y + c_{3}Z$ \\
+\end{center}
+
+where  $c_{1}, c_{2}, c_{3}$ give us the Bloch vector in cartesian coordinates:
 \begin{center}
 $\overrightharp{r} = (x, y, z) = (2c_{1}, 2c_{2}, 2c_{3})$
 \end{center}
@@ -221,7 +317,7 @@ $\overrightharp{r} = (x, y, z) = (2c_{1}, 2c_{2}, 2c_{3})$
 \vspace{5pt}
 
 
-\textbf{State Purity:} a scalar quantity to measure how pure a state is, defined as:
+\textbf{State Purity:} a scalar quantity to measure how pure a state is:
 
 \begin{center}
 $ purity = \gamma = tr(\rho^2) $
@@ -246,7 +342,7 @@ so if the length of a Bloch vector $(\sqrt{x^2 + y^2 + z^2} )$ equals 1, then th
 
 \newpage
 
-\textbf{Fidelity:} a scalar value that measure the closeness of the output state to the input state, after going through a quantum gate, defined as:
+\textbf{Fidelity:} a scalar value to measure the closeness of two quantum states, for example the initial state compared with the final state after going through quantum gates, defined as:
 
 \begin{center}
 
@@ -264,17 +360,6 @@ Fidelity holds the following properties:
 \vspace{5pt}
 \hrule 
 \vspace{5pt}
-
-
-\textbf{Rotation matrices:} 
-
-
-
-
-
-
-
-
 
 
 
