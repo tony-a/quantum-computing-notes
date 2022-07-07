@@ -89,16 +89,12 @@ $\langle{\phi} | {\psi}\rangle = \left(
 \hrule 
 \vspace{5pt}
 
-\textbf{Global phase factor:}
-A complex number z can be written as $z = re^{i\theta} $ in the case where $ r= 1$ and $\theta$ is a real number, then z is known as a phase factor and it can be simply ignored, as in it will not affect the state.
-
-\vspace{5pt}
-\hrule
-\vspace{5pt}
 
 \textbf{Euler's formula:}
 \begin{center}
 $ e^{i\theta} = \cos(\theta) + i\sin(\theta) $
+\qquad
+$ e^{-i\theta} = \cos(\theta) - i\sin(\theta) $
 \end{center}
 
 \vspace{5pt}
@@ -182,15 +178,6 @@ $
 $
 \end{center}
 
-\begin{center}
-
-$H|0\rangle = |+ \rangle =  \frac{1}{\sqrt{2}} |0\rangle + \frac{1}{\sqrt{2}}|1\rangle$
-
-$H|1\rangle = |- \rangle = \frac{1}{\sqrt{2}} |0\rangle - \frac{1}{\sqrt{2}}|1\rangle$
-\end{center}
-
-
-
 Pauli gates:
 \begin{center}
 $
@@ -213,16 +200,29 @@ $
     0 & -1 \\
   \end{array} } \right]
 $
-
 \end{center}
+
+Phase gate:
+\begin{multicols}{2}
+$ P_{\phi} = \left[ {\begin{array}{cc}
+    1 & 0 \\
+    0 & e^{i\phi} \\
+  \end{array} } \right]$
+
+\columnbreak
+
+$ |0\rangle \rightarrow |0\rangle$
+
+$ |1\rangle \rightarrow e^{i\phi} |1\rangle$
+\end{multicols}
 
 
 \vspace{5pt}
 \hrule
 \vspace{5pt}
 
-\textbf{Gate identities:} \\
 
+\textbf{Gate identities:} \\
 
 Pauli identities:
 \begin{multicols}{2}
@@ -339,8 +339,6 @@ so if the length of a Bloch vector $(\sqrt{x^2 + y^2 + z^2} )$ equals 1, then th
 \hrule 
 \vspace{5pt}
 
-
-\newpage
 
 \textbf{Fidelity:} a scalar value to measure the closeness of two quantum states, for example the initial state compared with the final state after going through quantum gates, defined as:
 
