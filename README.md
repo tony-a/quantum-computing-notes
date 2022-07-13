@@ -1,5 +1,37 @@
-# Notes on Quantum Computing:
+## Notes & Exercises on Quantum Computing
 
+### [Udemy Course](https://github.com/tony-a/quantum-computing-notes/tree/main/udemy_course):
+Coding exercises following lecture notes from this [Udemy course](https://www.udemy.com/course/quantum-computing-in-python-using-qiskit/) on quantum computing.
+
+#### Setup:
+Using anaconda-navigator launch Jupyter notebook after having installed the following two libraries, and then navigate to the folder containing the Jupyter notebooks using the UI.
+
+- pip install qiskit
+- pip install pylatexenc
+
+
+#### Topics covered:
+
+- **Section 5:**
+Exercises highlighting different quantum gates acting on single qubits in ground state, |0⟩, and excited state, |1⟩.
+
+- **Section 7:**
+Demonstrating how to construct various gates (such as Identity, Hadamard, and Pauli gates) using the most general single qubit gate, U.
+
+- **Section 8:**
+An example of quantum interference
+
+- **Section 9:**
+A collection of exercises showcasing multi-qubit quantum gates:
+  - 9.59: Demonstrating how a SWAP gate can be constructed from a series of CNOT gates.
+  - 9.61: Constructing all 4 Bell's states and showing how they are truly entangled states.
+  - 9.64: Toffoli gate, and other multi-controlled general gates.
+---
+### [Cheat Sheet](https://github.com/tony-a/quantum-computing-notes/tree/main/cheat_sheet):
+A collection of basic definitions, terminology and common gates.
+
+---
+### Random learning materials:
 A collection of videos and lectures I've found to be helpful on the theory and application of Quantum Computing.
 Most cover the concepts at a high level in laymen terms.
 
@@ -13,8 +45,9 @@ Most cover the concepts at a high level in laymen terms.
 
 - Qubits:
 Several quantum particles can be used as a qubit:
-  - [The outer electron of a phosphors atom.](https://www.youtube.com/watch?v=zNzzGgr2mhk)
-  - [The polarization property of a photon](https://www.youtube.com/watch?v=ofg335d3BJ8).
+  - [The outer electron of a phosphors atom](https://www.youtube.com/watch?v=zNzzGgr2mhk)
+  - [The polarization property of a photon](https://www.youtube.com/watch?v=ofg335d3BJ8)
+  - [Superconducting qubits](https://www.youtube.com/watch?v=daQJMwvxC_U)
 
 
 - Quantum decoherence [7 minute video.](https://www.youtube.com/watch?v=LsxJmHS0cc8)
@@ -33,7 +66,7 @@ Understanding how to preform operations on qubits.
 - [A comprehensive and interactive guide to quantum computing by IBM](https://quantum-computing.ibm.com/support/guides/gate-overview?section=5d00d964853ef8003c6d6820#)
 
 
-- [Quantum algorithms](https://en.wikipedia.org/wiki/Bernstein–Vazirani_algorithm)
+- [Quantum algorithms](https://quantumalgorithmzoo.org)
 
 ### Additional learning materials and resources:
 

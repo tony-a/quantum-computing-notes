@@ -10,3 +10,7 @@ print(counts)
 
 from qiskit.visualization import plot_histogram
 plot_histogram(counts)
+
+from qiskit import QuantumCircuit
+qc = QuantumCircuit
+qc.mcry()
