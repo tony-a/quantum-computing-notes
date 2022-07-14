@@ -27,6 +27,10 @@ A collection of exercises showcasing multi-qubit quantum gates:
   - 9.59: Demonstrating how a SWAP gate can be constructed from a series of CNOT gates.
   - 9.61: Constructing all 4 Bell's states and showing how they are truly entangled states.
   - 9.64: Toffoli gate, and other multi-controlled general gates.
+
+- **Section 10:**
+An examination of qiskit and its features
+
 ---
 ### [Cheat Sheet](https://github.com/tony-a/quantum-computing-notes/tree/main/cheat_sheet):
 A collection of basic definitions, terminology and common gates.

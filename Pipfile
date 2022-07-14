@@ -8,6 +8,8 @@ qiskit = "*"
 pylatexenc = "*"
 jupyterlab = "*"
 matplotlib = "*"
+ipywidgets = "*"
+seaborn = "*"
 
 [dev-packages]
 
