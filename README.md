@@ -4,11 +4,12 @@
 Coding exercises following lecture notes from this [Udemy course](https://www.udemy.com/course/quantum-computing-in-python-using-qiskit/) on quantum computing.
 
 #### Setup:
-Using anaconda-navigator launch Jupyter notebook after having installed the following two libraries, and then navigate to the folder containing the Jupyter notebooks using the UI.
-
-- pip install qiskit
-- pip install pylatexenc
-
+Use pipenv to set up the virtualenv and then launch JupyterLab:
+```
+pipenv install
+pipenv shell
+jupyter-lab
+```
 
 #### Topics covered:
 
