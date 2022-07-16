@@ -111,3 +111,5 @@ cheat_sheet/*.synctex.gz
 
 udemy_course/.ipynb_checkpoints
 udemy_course/template_of_ideal_quantum_computer.py
+udemy_course/.env
+

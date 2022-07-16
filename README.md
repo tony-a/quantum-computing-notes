@@ -4,7 +4,7 @@
 Coding exercises following lecture notes from this [Udemy course](https://www.udemy.com/course/quantum-computing-in-python-using-qiskit/) on quantum computing.
 
 #### Setup:
-Use pipenv to set up the virtualenv and then launch JupyterLab:
+Use pipenv to set up the virtualenv and then launch JupyterLab, requires python 3.10:
 ```
 pipenv install
 pipenv shell
@@ -29,13 +29,17 @@ A collection of exercises showcasing multi-qubit quantum gates:
   - 9.64: Toffoli gate, and other multi-controlled general gates.
 
 - **Section 10:**
-An examination of qiskit and its features
+An examination of qiskit, its features and how to run code on real quantum computers on IBM Quantum.
 
 ---
+---
+
 ### [Cheat Sheet](https://github.com/tony-a/quantum-computing-notes/tree/main/cheat_sheet):
 A collection of basic definitions, terminology and common gates.
 
 ---
+---
+
 ### Random learning materials:
 A collection of videos and lectures I've found to be helpful on the theory and application of Quantum Computing.
 Most cover the concepts at a high level in laymen terms.
