@@ -53,7 +53,7 @@ Most cover the concepts at a high level in laymen terms.
 
 
 - Qubits:
-Several quantum particles can be used as a qubit:
+Different implementations of a qubit have been proposed, leverating different quantum properties, some of which are:
   - [The outer electron of a phosphors atom](https://www.youtube.com/watch?v=zNzzGgr2mhk)
   - [The polarization property of a photon](https://www.youtube.com/watch?v=ofg335d3BJ8)
   - [Superconducting qubits](https://www.youtube.com/watch?v=daQJMwvxC_U)
