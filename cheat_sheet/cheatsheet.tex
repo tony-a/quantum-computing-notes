@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage{harpoon}  % used for vector arrow notation
 \usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[rightcaption]{sidecap}
 
 
 \title{\vspace{-4cm}
@@ -14,6 +16,8 @@ Tony Askar
 \date{} % Removes the default date from the title
 
 \begin{document}
+\graphicspath{ {./images/} }
+
 \maketitle
 \hrule
 \vspace{5pt}
@@ -363,8 +367,7 @@ Fidelity holds the following properties:
 \newpage
 
 \textbf{Bell States:}
-Bell states are set of specific two qubit quantum states that represent the simplest (and maximal) examples of quantum entanglement. Bell states are a form of entangled and normalized basis vectors.
-
+Bell states are a set of two qubits that represent the simplest (and maximal) examples of quantum entanglement.
 \begin{center}
 $|\Phi^+\rangle = \frac{|00\rangle + |11\rangle}{\sqrt{2}}$
 \quad
@@ -377,7 +380,11 @@ $|\Psi^+\rangle = \frac{|01\rangle + |10\rangle}{\sqrt{2}}$
 $|\Psi^-\rangle = \frac{|01\rangle - |10\rangle}{\sqrt{2}}$
 
 \end{center}
-% {\displaystyle \langle \Phi |\Phi \rangle =1}. Entanglement is a basis-independent result of superposition
+
+Creating a Bell state on a quantum computer can be done using the following circuits:
+
+\includegraphics[width=1\textwidth]{bell_states}
+
 
 
 \vspace{5pt}
